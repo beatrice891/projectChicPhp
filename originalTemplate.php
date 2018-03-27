@@ -1,7 +1,8 @@
 <?php
 //include the dbconnection
-include("dbconnect.php");
+include('dbconnect.php');
 ?>
+<!--   -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +16,8 @@ include("dbconnect.php");
 				<a href="index.php"><img src="images/logo.jpg" alt="Chic logo"/></a>
 			</div>
 		<div class="navigation">
-			<p>Links go here
+			<p><!-- Links go here  -->
+			<?php include('header.php');?>
 				<a href="admin.php">Admin</a>
 			</p>
 		</div>
