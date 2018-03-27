@@ -14,14 +14,14 @@
 			</div>
 		<div class="navigation">
 			<p>Links go here
-				<a href="admin.php"></a>
+				<a href="admin.php">Admin</a>
 			</p>
 		</div>
 		</div>
-		<div class="mainContent">
-		<p>Admin</p>
+		<div class="maincontent">
+			<p>Lorem ipsum goes here.</p>
 		</div>
-		<div class="secondContent">
+		<div class="seccontent">
 			<table width="259" border="0" cellspacing="0" cellpadding="0">
 				<tr>
 					<td width="80" align="top" class="textheading">Where:</td>
