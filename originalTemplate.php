@@ -16,7 +16,7 @@ include('dbconnect.php');
 				<a href="index.php"><img src="images/logo.jpg" alt="Chic logo"/></a>
 			</div>
 		<div class="navigation">
-			<p><!-- Links go here  -->
+			<p><!-- Links from db go here  -->
 			<?php include('header.php');?>
 				<a href="admin.php">Admin</a>
 			</p>
@@ -30,7 +30,7 @@ include('dbconnect.php');
 				<tr>
 					<td width="80" align="top" class="textheading">Where:</td>
 					<td width="179">Merivale Mall</td>
-					<p>Something</p>
+					<td>Something</td>
 				</tr>
 				<tr>
 					<td>&nbsp;</td>

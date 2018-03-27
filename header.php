@@ -5,8 +5,8 @@
 	$cat_rs = mysqli_fetch_assoc($cat_query);
 ?>
 <?php 
-	do{
-		echo $cat_rs['name'];?> |
-	<?php 
-		}while($cat_rs = mysqli_fetch_assoc($cat_query));
+	do{ ?>
+	<a href="category.php?categoryID=<?php echo $cat_rs['categoryID'];?>"><?php echo $cat_rs['name'];?></a>
+	 
+	<?php }while($cat_rs = mysqli_fetch_assoc($cat_query));
 ?>
