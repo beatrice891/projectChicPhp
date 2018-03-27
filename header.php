@@ -6,6 +6,7 @@
 ?>
 <?php 
 	do{
-		echo $cat_rs['name'];
-	}while($cat_rs = mysqli_fetch_assoc($cat_query))
+		echo $cat_rs['name'];?> |
+	<?php 
+		}while($cat_rs = mysqli_fetch_assoc($cat_query));
 ?>
