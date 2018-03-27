@@ -4,7 +4,7 @@
 <html>
 <head>
 	<title>Chic magazine</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<div class="container">
@@ -19,7 +19,7 @@
 		</div>
 		</div>
 		<div class="mainContent">
-		<p>text</p>
+		<p>Admin</p>
 		</div>
 		<div class="secondContent">
 			<table width="259" border="0" cellspacing="0" cellpadding="0">
