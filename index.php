@@ -15,15 +15,24 @@ include('dbconnect.php');
 			<div class="logo">
 				<a href="index.php"><img src="images/logo.jpg" alt="Chic logo"/></a>
 			</div>
-		<div class="navigation">
-			<p><!-- Links from db go here  -->
-			<?php include('header.php');?>
-				<a href="admin.php">Admin</a>
-			</p>
+			<div class="navigation">
+				<p><!-- Links from db go here  -->
+				<?php include('categoryList.php');?>
+					<a href="admin.php">Admin</a>
+				</p>
+			</div>
 		</div>
-		</div>
+		<!-- include header.php to see if user visitet other pages -->
+		<?php include('header.php');?>
 		<div class="maincontent">
-			<p>Lorem ipsum goes here.</p>
+			<?php 
+				if(!isset($_GET['page'])){
+					include('home.php');
+				}else{
+					$page = $_GET['page'];
+					 include('category.php');
+				}
+			?>
 		</div>
 		<div class="seccontent">
 			<table width="259" border="0" cellspacing="0" cellpadding="0">
