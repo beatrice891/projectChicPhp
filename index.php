@@ -16,7 +16,7 @@ include('dbconnect.php');
 				<a href="index.php"><img src="images/logo.jpg" alt="Chic logo"/></a>
 			</div>
 			<div class="navigation">
-				<p><!-- Links from db go here  -->
+				<p><!-- Links from db goes here  -->
 				<?php include('categoryList.php');?>
 					<a href="admin.php">Admin</a>
 				</p>
@@ -26,13 +26,13 @@ include('dbconnect.php');
 		<?php include('header.php');?>
 		<div class="maincontent">
 			<?php 
-				if(!isset($_GET['page'])){
-					include('home.php');
-				}else{
-					$page = $_GET['page'];
-					 include('category.php');
-				}
-			?>
+			if(!isset($_GET['page'])) {
+				include("home.php");
+			} else {
+				$page=$_GET['page'];
+				include("$page.php");
+			}
+		?>
 		</div>
 		<div class="seccontent">
 			<table width="259" border="0" cellspacing="0" cellpadding="0">
