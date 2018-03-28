@@ -18,7 +18,8 @@ include('dbconnect.php');
 			<div class="navigation">
 				<p><!-- Links from db goes here  -->
 				<?php include('categoryList.php');?>
-					<a href="admin.php">Admin</a>
+				<!-- redirect to  ("$page.php"); -->
+					<a href="index.php?page=admin">Admin</a>
 				</p>
 			</div>
 		</div>
