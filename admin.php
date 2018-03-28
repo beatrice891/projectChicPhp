@@ -1,6 +1,12 @@
 <?php
 //start session to keep the info when navigate
 	session_start();
+//check to see if user is logging out
+	if(isset($_GET['action'])){
+		if($_GET['action']=='logout'){
+			unset($_SESSION['admin']);
+		}
+	}
 //check to see if someone try to login,check to see if submit has press
 	if(isset($_POST['login'])){
 		$username = $_POST['username'];
