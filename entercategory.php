@@ -5,9 +5,10 @@
 		header('Location:index.php?page=admin');
 	}
 //check to see if user has submitted the add category form
-	if(!isset($_POST['submit'])){
-		header('Location:index.php?page=admin');
-	}
+	// if(!isset($_POST['submit'])){
+	// 	header('Location:index.php?page=admin');
+	// }
+	//remove the confirmation submit button and added to confirmcategory.php
 //enter the new category
 	$name = mysqli_real_escape_string($dbconnect, $_POST['name']);
 	$newcategory_sql = "INSERT INTO category (name) VALUES('$name')";
