@@ -23,7 +23,7 @@
 
 //if login display
 	if(isset($_SESSION['admin'])){
-		include('cpanel.php');
+		include('adminpanel.php');
 //if is not login display
 	}else{
 		include('login.php');
