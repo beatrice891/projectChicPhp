@@ -1,9 +1,15 @@
 <?php
 	include('dbconnect.php');
+	
+	session_start();
+
 	if(!isset($_SESSION['admin'])){
 		header('Location:index.php');
 	}
+	if(isset($_GET['categoryID'])){
 	$_SESSION['editcategory']['categoryID']=$_GET['categoryID'];
+	}
+
 	if(!isset($_SESSION['editcategory']['name'])){
 //create the query for edit the item
 	$edit_sql = "SELECT * FROM category WHERE categoryID=".$_GET['categoryID'];
