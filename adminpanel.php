@@ -8,3 +8,4 @@ action=logout - will see through to the admin page
 <p><a href="index.php?page=addcategory">Add new category</a></p>
 <p><a href="index.php?page=deletecategoryselect">Delete Category</a></p>
 <p><a href="index.php?page=editcategoryselect">Edit Category</a></p>
+<p><a href="index.php?page=addstock">Add stock</a></p>
