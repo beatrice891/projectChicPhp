@@ -15,3 +15,4 @@
 	<p><input type="text" name="name" size="40" value="<?php echo $_SESSION['addcategory']['name'];?>" maxlength="50"></p>
 	<p><input type="submit" name="submit" value="Add category"></p>
 </form>
+<,,,>
