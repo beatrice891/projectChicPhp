@@ -11,6 +11,13 @@
 		$_SESSION['addstock']['price'] = "";
 		$_SESSION['addstock']['topline'] = "";
 		$_SESSION['addstock']['description'] = "";
+		//create a session that set the default noimage
+		$_SESSION['addstock']['thumbnail'] = "noimage.jpg";
+	}//if the user chose a image and they after returning back to this page after the confrimation page this code will run
+	else{
+		if($_SESSION['addstock']['thumbnail'] !="noimage.jpg"){
+			unlink("images/".$_SESSION['addstock']['thumbnail']);
+		}
 	}
 ?>
 <div class="maincontent">
