@@ -103,4 +103,4 @@
 				</div>
 	<?php }
 ?>
-<p><a href="index.php?page=addstock">Go back</a></p>
+<p><a href="index.php?page=addstock">Go back</a> - <a href="index.php?page=enterstock">Confirm</a></p>
